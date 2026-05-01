@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+/* NAV */
+nav {
+  background: #0033cc;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero-banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-bottom: 5px solid red;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border-left: 6px solid red;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* IMAGE */
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* TEXT */
+h2 {
+  color: #cc0000;
+}
+
+/* COUNTER */
+#countdown, #participants {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0033cc;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
